@@ -98,7 +98,7 @@ $(function() {
       },
 
       serialize: function() {
-        return this.$('form').serializeObject();
+        return this.$('form').formParams();
       },
       
       render: function(response) {

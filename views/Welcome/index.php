@@ -7,12 +7,14 @@
     <% if (!_.isEmpty(token)) { %>
       Добропожаловать, <%- name %>! <a href="#!/logout" class="btn btn-primary logout">выйти</a>
       <div>
+<!--
       <% if (typeof(is_new) != "undefined") { %>
         Подтвердите свой email отправленный Вам на
         <div>
           <a target="_blank" href="http://<%= email.split('@')[1] %>"><%- email %></a>
         </div>
       <% } %>
+-->
       </div>
     <% } else { %>
 

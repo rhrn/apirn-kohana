@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Api_V1_Users extends Controller_V1_Api {
+class Controller_Api_V1_Users extends Controller_Api_Api {
 
   public function before() {
     parent::before();

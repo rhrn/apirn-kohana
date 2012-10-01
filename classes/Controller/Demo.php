@@ -1,8 +1,8 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Welcome extends Controller_Web {
+class Controller_Demo extends Controller_Web {
 
-  public $template = 'html/welcome';
+  public $template = 'html/default';
 
   public function before() {
 
@@ -11,12 +11,9 @@ class Controller_Welcome extends Controller_Web {
 
   public function action_index() {
 
-    $this->template->styles = array(
-      array('href' => '/static/css/apps/welcome.css')
-    );
-
     $this->template->scripts = array(
-      array('src' => '/static/js/apps/welcome.js')
+      array('src' => '/static/js/libs/bootstrap-backbone.js'),
+      array('src' => '/static/js/demo/index.js')
     );
 
   }

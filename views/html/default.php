@@ -18,8 +18,6 @@
 	<link rel="stylesheet" href="<?php echo $style['href'] ?>">
 	<?php endforeach ?><?php endif ?>
 
-  <script src="/static/js/libs/modernizr-2.5.3.custom.js"></script>
-
 </head>
 
 <body>
@@ -30,9 +28,9 @@
 		<?php echo $view ?>
 	</div>
 	<script src="/static/js/libs/json2.js"></script>
-	<script src="/static/js/libs/jquery-1.7.2.min.js"></script>
-	<script src="/static/js/libs/underscore-1.3.3.min.js"></script>
-	<script src="/static/js/libs/backbone-min.js"></script>
+	<script src="/static/js/libs/jquery.min.js"></script>
+	<script src="/static/js/libs/underscore.min.js"></script>
+	<script src="/static/js/libs/backbone.min.js"></script>
 	<script src="/static/js/libs/amplify.store.js"></script>
 	<script src="/static/js/libs/bootstrap.min.js"></script>
 	<?php if (!empty($scripts)): ?><?php foreach ($scripts as $script): ?>
